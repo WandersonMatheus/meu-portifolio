@@ -19,6 +19,7 @@ body{
     width: 100%;
     z-index: 100;
     backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(16px);
     background-color: rgba(255, 255, 255, 0.6);
     transition: background-color 0.3s, backdrop-filter 0.3s;
 }
@@ -101,13 +102,8 @@ body{
         width: 200px;
     }
     .navbar {
-        backdrop-filter: blur(16px);
-        background-color: rgba(255, 255, 255, 0.616);
-        transition: background-color 0.3s, backdrop-filter 0.3s;
-    }
-    .navbar.scrolled {
-        background-color: rgba(255, 255, 255, 0.9);
-        backdrop-filter: blur(16px); 
+        background-color: rgba(255, 255, 255, 0.9); 
+        backdrop-filter: none; 
     }
 }
 @media (max-width: 900px) {
