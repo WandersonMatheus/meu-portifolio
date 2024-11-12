@@ -22,13 +22,28 @@ body{
     background-color: rgba(255, 255, 255, 0.6);
     transition: background-color 0.3s, backdrop-filter 0.3s;
 }
+.nav-link {
+    color: #555; 
+    transition: color 0.3s ease;
+  }
+  
 
+  .nav-link.active {
+    color: #333; 
+  }
 .navbar.scrolled {
     background-color: rgba(255, 255, 255, 0.9);
     backdrop-filter: blur(10px); 
 }
 .social-icon{
+    transition: all 0.3s ease;
     color: black;
+    border-radius: 10px;
+    padding: 10px;
+}
+.social-icon:hover{
+    background-color: #111;
+    color: #fff;
 }
 [data-bs-theme="dark"] .social-icon{
     color: white;
@@ -83,7 +98,22 @@ body{
     .img-about{
         width: 90%;
     }
+    .projects img{
+        width: 200px;
+    }
 }
+@media (max-width: 900px) {
+    .home {
+        padding-top: 80px;
+    }
+    .img-about{
+        width: 90%;
+    }
+    .projects img{
+        width: 200px;
+    }
+}
+
 .icons-tech{
     margin: 8px;
 }
