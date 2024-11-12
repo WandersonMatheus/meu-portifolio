@@ -193,24 +193,26 @@
 '        <h1 class="mb-5">Fale comigo</h1>
         <div>
           <div class="p-5">
-            <form class="pt-4" action="https://formsubmit.co/fb660f799aed5875c4dd16418364d1f7" method="POST" >
+            <form class="pt-4" action="https://formsubmit.co/fb660f799aed5875c4dd16418364d1f7" method="POST">
               <div class="mb-3">
-                <label for="nameInput" class="form-label"></label>
-                <input type="text" class="form-control" id="nameInput" placeholder="Seu nome" required>
+                  <label for="nameInput" class="form-label">Nome</label>
+                  <input type="text" class="form-control" id="nameInput" name="name" placeholder="Seu nome" required>
               </div>
               <div class="mb-3">
-                <label for="emailInput" class="form-label"></label>
-                <input type="email" class="form-control" id="emailInput" placeholder="Digite seu melhor email" required>
+                  <label for="emailInput" class="form-label">E-mail</label>
+                  <input type="email" class="form-control" id="emailInput" name="email" placeholder="Digite seu melhor email" required>
               </div>
               <div class="mb-3">
-                <label for="subjectInput" class="form-label"></label>
-                <input type="text" class="form-control" id="subjectInput" placeholder="Digite o assunto" required>
+                  <label for="subjectInput" class="form-label">Assunto</label>
+                  <input type="text" class="form-control" id="subjectInput" name="subject" placeholder="Digite o assunto" required>
               </div>
               <div class="mb-3">
-                <label for="messageInput" class="form-label"></label>
-                <textarea class="form-control" id="messageInput" rows="4" placeholder="Como posso te ajudar?" required></textarea>
+                  <label for="messageInput" class="form-label">Mensagem</label>
+                  <textarea class="form-control" id="messageInput" name="message" rows="4" placeholder="Como posso te ajudar?" required></textarea>
               </div>
               <button type="submit" class="btn btn-primary">Enviar</button>
+          </form>
+          
             </form>
           </div>
           <div class="d-flex pt-3 justify-content-center">
