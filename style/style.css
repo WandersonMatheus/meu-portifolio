@@ -25,7 +25,7 @@ body{
 .nav-link {
     color: #555; 
     transition: color 0.3s ease;
-  }
+}
   
 .nav-link.active {
     color: #333; 
@@ -100,6 +100,15 @@ body{
     .projects img{
         width: 200px;
     }
+    .navbar {
+        backdrop-filter: blur(16px);
+        background-color: rgba(255, 255, 255, 0.616);
+        transition: background-color 0.3s, backdrop-filter 0.3s;
+    }
+    .navbar.scrolled {
+        background-color: rgba(255, 255, 255, 0.9);
+        backdrop-filter: blur(16px); 
+    }
 }
 @media (max-width: 900px) {
     .home {
@@ -139,24 +148,7 @@ body{
     transform: translateX(-50%) translateY(-50px); 
     opacity: 1;
 }
-.scroll-top-btn {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    display: none; /* Escondido por padrão */
-    background-color: #333;
-    color: #fff;
-    border: none;
-    padding: 10px;
-    border-radius: 50%;
-    cursor: pointer;
-    font-size: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-  }
-  
-  .scroll-top-btn:hover {
-    background-color: #555;
-  }
+
 
   
   
