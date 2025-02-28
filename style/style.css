@@ -88,7 +88,10 @@ body{
     display: none;
 }
 .img-about{
-    width: 50%;
+    width: 66%;
+}
+.about{
+    font-family: "Montserrat";
 }
 
 @media (max-width: 768px) {
